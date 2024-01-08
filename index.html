@@ -9,19 +9,23 @@
     </head>
     <body>
         <form id="nc" name="newColor">
-            <h1>New Color:</h1>
-            <label for="r">R: </label><input type="number" id="r" name="redInput" ><br>
-            <label for="g">G: </label><input type="number" id="g" name="greenInput"><br>
-            <label for="b">B: </label><input type="number" id="b" name="blueInput"><br>
+            
+            <div id="r">
+                <!-- <label for="r">R: </label> -->
+                <input type="number" id="r" name="redInput" placeholder="R">
+            </div>
+            <div id="g">
+                <input type="number" id="g" name="greenInput" placeholder="G">
+            </div>
+            <div id="b">
+                <input type="number" id="b" name="blueInput" placeholder="B">
+            </div>
 
-            <button type="submit" id="sendInfo">Send</button>
+            <button type="submit" id="sendInfo">Add Color</button>
         </form>
         <div id="pallete">
             <ul id="list">
-                <li class="option" id="red"></li>
-                <li class="option" id="blue"></li>
-                <li class="option" id="yellow"></li>
-                <li class="option" id="green"></li>
+                <li class="option" id="red"></li><li class="option" id="blue"></li><li class="option" id="yellow"></li><li class="option" id="green"></li>
             </ul>
         </div>
     </body>
